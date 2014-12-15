@@ -1,0 +1,27 @@
+{
+  "name": "p-find",
+  "version": "1.0.0",
+  "description": "find library wrapped in promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/targos/p-find",
+  "keywords": [
+    "find",
+    "promise"
+  ],
+  "author": "Michaël Zasso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/targos/p-find/issues"
+  },
+  "homepage": "https://github.com/targos/p-find",
+  "dependencies": {
+    "find": "^0.1.7",
+    "promisify-lib": "^1.0.0"
+  },
+  "devDependencies": {
+    "bluebird": "^2.3.11"
+  }
+}
