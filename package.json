@@ -1,6 +1,6 @@
 {
   "name": "p-find",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "find library wrapped in promises",
   "main": "index.js",
   "scripts": {
