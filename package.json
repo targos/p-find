@@ -1,6 +1,6 @@
 {
   "name": "p-find",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "find library wrapped in promises",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   "homepage": "https://github.com/targos/p-find",
   "dependencies": {
     "find": "^0.1.7",
-    "promisify-lib": "^1.0.0"
+    "thenify-all": "^1.6.0"
   },
   "devDependencies": {
     "bluebird": "^2.3.11"

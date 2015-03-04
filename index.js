@@ -1,6 +1,6 @@
 
-var promisify = require('promisify-lib'),
-    find = require('find');
+var promisify = require('thenify-all');
+var findLib = require('find');
 
 function nodeify(fn) {
     return function (pattern, root, callback) {
@@ -10,10 +10,16 @@ function nodeify(fn) {
     }
 }
 
+var find = {};
+var methods = Object.keys(findLib);
+for (var i = 0; i < methods.length; i++) {
+    find[i] = findLib[i];
+}
+
 find.file = nodeify(find.file);
 find.dir = nodeify(find.dir);
 
-promisify.all(find, exports, [
+promisify(find, exports, [
     'file',
     'dir'
 ]);
